@@ -21,7 +21,8 @@
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-<script src="js/Three.js"></script>
+<!--<script src="js/Three.js"></script>-->
+<%= javascript_include_tag "Three" %>
 
 <script type="text/javascript">
 
@@ -77,7 +78,7 @@ var particleCount = 180,
 		color: 0xFFFFFF,
 		size: 20,
 		map: THREE.ImageUtils.loadTexture(
-			"../../assets/images/particle.png" 
+			"assets/particle.png" 
 		),
 		blending: THREE.AdditiveBlending,
 		transparent: true
